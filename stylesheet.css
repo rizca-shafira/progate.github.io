@@ -1,204 +1,169 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'PT Sans Caption';
+}
+
+html,
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  margin: 0;
-  font-family: "Lucida Grande";
+    font-family: "Lucida Grande";
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .clear {
-  clear: left;
+    clear: left;
 }
 
 .container {
-  max-width: 1170px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
-  background-size: cover;
-  color: white;
-  text-align: center;
-}
-
-.top-wrapper h1 {
-  opacity: 0.7;
-  font-size: 45px;
-  letter-spacing: 5px;
-  margin-bottom: 10px;
-}
-
-.top-wrapper p {
-  opacity: 0.7;
-  margin-bottom: 3px;
+    margin: 0 auto;
 }
 
 .btn-wrapper {
-  text-align: center;
-  margin: 20px 0;
+    text-align: center;
+    margin: 30px 0;
 }
 
 .btn-wrapper p {
-  margin: 10px 0;
+    margin: 10px 0;
 }
 
-.signup {
-  background-color: #239b76;
-}
-
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
-
-.twitter {
-  background-color: #55acee;
+.contact {
+    background-color: #f6c245;
 }
 
 .btn {
-  padding: 12px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
+    padding: 20px 20px;
+    color: white;
+    display: inline-block;
+    border-radius: 4px;
+    text-align: center;
 }
 
-.btn:hover {
-  opacity: 1;
+.btn:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
 }
 
-.fa {
-  margin-right: 5px;
+.icon-socmed {
+    padding: 10px;
+    width: 100%;
+    background-color: #272727;
+    text-align: center;
+}
+
+.icon {
+    color: white;
+    padding: 0 30px;
+    font-size: 30px;
 }
 
 header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
-  position :fixed;
-  top: 0;
-  z-index: 10;
+    height: 65px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 
 .logo {
-  width: 124px;
-  margin-top: 20px;
+    width: 55px;
+    margin-top: 5px;
 }
 
 .header-left {
-  float: left;
+    float: left;
+    margin-left: 25px;
 }
 
 .header-right {
-  float: right;
-  margin-right: -25px;
+    float: right;
 }
 
 .header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
+    line-height: 65px;
+    padding: 0 25px;
+    color: black;
+    display: block;
+    float: left;
+    transition: all 0.5s;
 }
 
 .header-right a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+    background-color: #f6c245;
 }
 
-.menu-icon{
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  display: none;
+.top-wrapper .container {
+    padding: 100px 0 100px 0;
+    background-image: url(https://img.freepik.com/free-photo/programmer-scanning-screen-his-smartwatch-with-smartphone-camera_1098-18710.jpg?t=st=1647246427~exp=1647247027~hmac=87aa72497c24641e4753ba5315336dee3de3e7e23b34613e9611188902c2727a&w=740);
+    background-size: cover;
+    color: white;
+    text-align: center;
 }
 
-.lesson-wrapper {
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #f7f7f7;
-  text-align: center;
+.top-wrapper {
+    background-color: white;
 }
 
-.heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  color: #5f5d60;
+.isi p {
+    color: white;
 }
 
-.heading h2 {
-  font-weight: normal;
+.isi span {
+    color: #f6c245;
 }
 
-.lesson {
-  float: left;
-  width: 25%;
+.txt p {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
-.lesson-icon {
-  position: relative;
-}
-
-.lesson-icon p {
-  position: absolute;
-  top: 44%;
-  width: 100%;
-  color: white;
-}
-
-.text-contents {
-  width: 80%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 15px;
-  color: #b3aeb5;
-}
-
-.heading h3 {
-  font-weight: normal;
-}
-
-.message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
-  text-align: center;
-}
-
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0 7px #1a7940;
-}
-
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
+.isi h3 {
+    font-size: 35px;
+    margin: 20px;
 }
 
 footer img {
-  width: 125px;
+    width: 55px;
+    margin-left: 25px
 }
 
 footer p {
-  color: #b3aeb5;
-  font-size: 12px;
+    color: black;
+    font-size: 12px;
+    margin-left: 25px
 }
 
 footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
+    padding: 5px;
+    background-color: #f6c245
+}
+
+span.menu-icon {
+    color: black;
+    float: right;
+    font-size: 25px;
+    padding: 21px 25px;
+    display: none;
 }
