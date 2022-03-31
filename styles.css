@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap");
+
+html,
+body {
+    background: #959f9f;
+    color: #1d2122;
+    font-family: "Nunito", sans-serif;
+}
+
+.container {
+    background: #959f9f;
+    box-shadow: -10px -10px 15px #abb7b7, 10px 10px 15px #7a8787;
+    width: 380px;
+    border-radius: 50px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-inner {
+    background: #959f9f;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset -2px -2px 10px #abb7b7, inset 2px 2px 10px #7a8787;
+}
+
+.heading {
+    text-align: left;
+    font-size: 10px;
+    padding: 20px;
+    z-index: -1;
+    float: left;
+}
+
+.resultscreen {
+    height: 90px;
+    width: 340px;
+    position: relative;
+    background: #959f9f;
+    margin: 20px auto;
+    border-radius: 30px;
+    box-shadow: inset -7px -7px 5px #abb7b7, inset 7px 7px 5px #7a8787;
+}
+
+input[type='text'] {
+    position: relative;
+    display: block;
+    margin: auto;
+    height: 90px;
+    padding: 0px;
+    box-sizing: border-box;
+    height: 90px;
+    width: 90%;
+    background: transparent;
+    border-radius: 30px;
+    border: none;
+    text-align: right;
+    font-size: 40px;
+    outline: none;
+    color: #fafafa;
+}
+
+table {
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+input[type='button'] {
+    font-size: 24px;
+    width: 70px;
+    height: 60px;
+    border: none;
+    color: #fafafa;
+    cursor: pointer;
+    outline: none;
+    background: #959f9f;
+    border-radius: 10px;
+    margin: 4px 7px;
+    box-shadow: -3px -3px 5px #abb7b7, 3px 3px 5px #7a8787;
+}
+
+input[type='button'][value='='] {
+    display: block;
+    width: 160px;
+}
+
+input[type='button']:active {
+    box-shadow: inset -3px -3px 5px #abb7b7, inset 3px 3px 5px #7a8787;
+}
